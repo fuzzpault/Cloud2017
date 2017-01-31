@@ -5,7 +5,7 @@
 <body>
 <h1>Hi there!  This is an important change.</h1>
 <?php
-  php_info();
+  phpinfo();
 ?>
 </body>
 </html>

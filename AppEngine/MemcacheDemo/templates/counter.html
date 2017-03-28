@@ -1,0 +1,27 @@
+<html>
+<head>
+
+</head>
+<body>
+  <h1>Welcome to the counter!</h1>
+  <div style="float:right">
+    <table width="200" border="1">
+    {% for p in counts %}
+      <tr>
+        <td>{{p.0}}</td>
+        <td>{{p.1}}</td>
+      </tr> 
+    {% endfor %}
+    </table>
+  </div>
+  
+  <form method="get" action="{{ url_for('counter') }}">
+    <label for="name">Name:</label>
+    <input type="text" name="person_name" value="{{name}}"><br />
+    
+    <input type="submit">
+  </form>
+  
+  <img src="/files/cat.jpg" width="300">
+</body>
+</html>
